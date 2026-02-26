@@ -4,24 +4,24 @@
 
 /* ---------- CSS Variables ---------- */
 :root {
-  --clr-dark:       #060911;
-  --clr-dark2:      #0c1020;
-  --clr-dark3:      #111827;
-  --clr-card:       #131c2e;
-  --clr-card-hover: #1a2540;
+  --clr-dark:       #303746;
+  --clr-dark2:      #272d39;
+  --clr-dark3:      #1f2330;
+  --clr-card:       #3a4255;
+  --clr-card-hover: #424b61;
   --clr-border:     rgba(255,255,255,0.08);
-  --clr-gold:       #F5B014;
-  --clr-gold-dark:  #d9960d;
+  --clr-gold:       #fa751b;
+  --clr-gold-dark:  #d4601a;
   --clr-white:      #ffffff;
   --clr-text:       #cbd5e1;
   --clr-muted:      #64748b;
-  --clr-highlight:  #F5B014;
+  --clr-highlight:  #fa751b;
   --clr-green:      #22c55e;
   --font:           'Inter', system-ui, -apple-system, sans-serif;
   --radius:         12px;
   --radius-sm:      8px;
   --shadow:         0 4px 24px rgba(0,0,0,0.4);
-  --shadow-gold:    0 4px 24px rgba(245,176,20,0.35);
+  --shadow-gold:    0 4px 24px rgba(250,117,27,0.35);
   --max-w:          1160px;
   --section-py:     100px;
 }
@@ -71,9 +71,9 @@ iframe { display: block; }
   box-shadow: var(--shadow-gold);
 }
 .btn-primary:hover {
-  background: linear-gradient(135deg, #ffc72a, var(--clr-gold));
+  background: linear-gradient(135deg, #ff9a4d, var(--clr-gold));
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(245,176,20,0.5);
+  box-shadow: 0 8px 32px rgba(250,117,27,0.5);
 }
 .btn-primary:active { transform: translateY(0); }
 .btn-sm {
@@ -89,9 +89,9 @@ iframe { display: block; }
 /* ---------- Section Tags ---------- */
 .section-tag {
   display: inline-block;
-  background: rgba(245,176,20,0.12);
+  background: rgba(250,117,27,0.12);
   color: var(--clr-gold);
-  border: 1px solid rgba(245,176,20,0.3);
+  border: 1px solid rgba(250,117,27,0.3);
   font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -129,7 +129,7 @@ iframe { display: block; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(6,9,17,0.95);
+  background: rgba(48,55,70,0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--clr-border);
@@ -181,23 +181,23 @@ iframe { display: block; }
   transform: translateX(-50%);
   width: 900px;
   height: 900px;
-  background: radial-gradient(circle, rgba(245,176,20,0.1) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(250,117,27,0.1) 0%, transparent 65%);
   pointer-events: none;
 }
 .hero-bg-overlay {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(245,176,20,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(250,117,27,0.07) 0%, transparent 60%),
     radial-gradient(ellipse 60% 40% at 80% 80%, rgba(59,130,246,0.05) 0%, transparent 50%);
   pointer-events: none;
 }
 .hero-inner { position: relative; z-index: 1; }
 .hero-badge {
   display: inline-block;
-  background: rgba(245,176,20,0.12);
+  background: rgba(250,117,27,0.12);
   color: var(--clr-gold);
-  border: 1px solid rgba(245,176,20,0.3);
+  border: 1px solid rgba(250,117,27,0.3);
   font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -329,7 +329,7 @@ iframe { display: block; }
   transition: border-color 0.2s, background 0.2s;
 }
 .problem-card:hover {
-  border-color: rgba(245,176,20,0.3);
+  border-color: rgba(250,117,27,0.3);
   background: var(--clr-card-hover);
 }
 .problem-icon {
@@ -421,8 +421,8 @@ iframe { display: block; }
   gap: 10px;
 }
 .phone-result.featured {
-  background: rgba(245,176,20,0.1);
-  border: 1px solid rgba(245,176,20,0.25);
+  background: rgba(250,117,27,0.1);
+  border: 1px solid rgba(250,117,27,0.25);
 }
 .result-dot {
   width: 8px;
@@ -498,7 +498,7 @@ iframe { display: block; }
   transition: border-color 0.2s, background 0.2s;
 }
 .offer-item:hover {
-  border-color: rgba(245,176,20,0.25);
+  border-color: rgba(250,117,27,0.25);
   background: var(--clr-card-hover);
 }
 .offer-icon {
@@ -509,7 +509,7 @@ iframe { display: block; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(245,176,20,0.1);
+  background: rgba(250,117,27,0.1);
   border-radius: var(--radius-sm);
 }
 .offer-item-text h4 {
@@ -653,7 +653,7 @@ iframe { display: block; }
   overflow: hidden;
   transition: border-color 0.2s;
 }
-.testimonial-card:hover { border-color: rgba(245,176,20,0.3); }
+.testimonial-card:hover { border-color: rgba(250,117,27,0.3); }
 .video-wrapper {
   position: relative;
   width: 100%;
@@ -694,7 +694,7 @@ iframe { display: block; }
   padding: 28px;
   transition: border-color 0.2s;
 }
-.text-testimonial:hover { border-color: rgba(245,176,20,0.25); }
+.text-testimonial:hover { border-color: rgba(250,117,27,0.25); }
 .stars {
   color: var(--clr-gold);
   font-size: 1rem;
@@ -771,9 +771,9 @@ iframe { display: block; }
   color: var(--clr-muted);
 }
 .compare-table th.th-peak {
-  background: rgba(245,176,20,0.1);
+  background: rgba(250,117,27,0.1);
   color: var(--clr-gold);
-  border-bottom: 2px solid rgba(245,176,20,0.3);
+  border-bottom: 2px solid rgba(250,117,27,0.3);
 }
 .compare-table td:first-child {
   text-align: left;
@@ -782,7 +782,7 @@ iframe { display: block; }
   background: var(--clr-dark3);
 }
 .compare-table td.td-peak {
-  background: rgba(245,176,20,0.05);
+  background: rgba(250,117,27,0.05);
   color: var(--clr-gold);
   font-weight: 700;
 }
@@ -797,7 +797,7 @@ iframe { display: block; }
 .compare-table tr:last-child td { border-bottom: none; }
 .compare-table tr:hover td { background: rgba(255,255,255,0.02); }
 .compare-table tr:hover td:first-child { background: rgba(255,255,255,0.03); }
-.compare-table tr:hover td.td-peak { background: rgba(245,176,20,0.07); }
+.compare-table tr:hover td.td-peak { background: rgba(250,117,27,0.07); }
 
 /* ============================================================
    FAQ
@@ -817,7 +817,7 @@ iframe { display: block; }
   overflow: hidden;
   transition: border-color 0.2s;
 }
-.faq-item.open { border-color: rgba(245,176,20,0.3); }
+.faq-item.open { border-color: rgba(250,117,27,0.3); }
 .faq-q {
   width: 100%;
   display: flex;
@@ -894,8 +894,8 @@ iframe { display: block; }
   padding: 4px;
 }
 .cta-box-inner {
-  background: linear-gradient(135deg, rgba(245,176,20,0.06), rgba(245,176,20,0.02));
-  border: 1px solid rgba(245,176,20,0.2);
+  background: linear-gradient(135deg, rgba(250,117,27,0.06), rgba(250,117,27,0.02));
+  border: 1px solid rgba(250,117,27,0.2);
   border-radius: 12px;
   padding: 48px 40px;
 }
