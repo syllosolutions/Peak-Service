@@ -928,6 +928,16 @@ iframe { display: block; }
   flex-shrink: 0;
 }
 .cta-main-btn { display: inline-flex; }
+.booking-calendar {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.booking-calendar iframe {
+  width: 100%;
+  min-height: 700px;
+  border: none;
+}
 .cta-note {
   margin-top: 16px;
   font-size: 0.875rem;
