@@ -689,12 +689,14 @@ iframe { display: block; }
 
 /* Text Testimonials */
 .text-testimonials {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   margin-top: 12px;
 }
 .text-testimonial {
+  flex: 0 1 340px;
   background: var(--clr-card);
   border: 1px solid var(--clr-border);
   border-radius: var(--radius);
@@ -1029,8 +1031,8 @@ iframe { display: block; }
   .testimonial-grid .testimonial-card:last-child {
     display: none; /* hide third on tablet for clean 2-col layout */
   }
-  .text-testimonials {
-    grid-template-columns: 1fr;
+  .text-testimonials .text-testimonial {
+    flex: 0 1 100%;
   }
   .steps {
     flex-direction: column;
